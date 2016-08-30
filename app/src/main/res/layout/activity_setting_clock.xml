@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:columnCount="2"
+android:rowCount="6"
+tools:context=".SettingClockActivity">
+
+
+<!-- 启用时钟 -->
+
+<Switch
+    android:id="@+id/tbClockEnable"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_columnSpan="2"
+    android:text="Clock alarm enable" />
+
+<!-- 1-时钟1 -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Morning" />
+
+<EditText
+    android:id="@+id/etClock_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="time" />
+
+<!-- 2-时钟2 -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_column="0"
+    android:text="Afternoon" />
+
+<EditText
+    android:id="@+id/etClock_2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="time" />
+
+<!-- 3-时钟3 -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_column="0"
+    android:text="Evening" />
+
+<EditText
+    android:id="@+id/etClock_3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="time" />
+
+<!-- 按钮 -->
+<Button
+    android:id="@+id/btnSave"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Apply"
+    android:onClick="btnApply" />
+
+<Button
+    android:id="@+id/btnBack"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Back"
+    android:onClick="btnCancel"/>
+
+
+</GridLayout>

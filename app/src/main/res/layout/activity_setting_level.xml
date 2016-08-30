@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting_level"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="2"
+    android:rowCount="10"
+    tools:context="com.yushealth.prostate.fingerdanceforprostate.SettingLevelActivity">
+
+    <RadioGroup
+        android:layout_columnSpan="2"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New" />
+
+        <RadioButton
+            android:id="@+id/rb_expert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expert" />
+    </RadioGroup>
+    <!-- new -->
+    <!-- inhale-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:text="New" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inhale" />
+
+    <EditText
+        android:id="@+id/new_inhale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+
+        android:inputType="number" />
+    <!-- hold -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hold" />
+
+    <EditText
+        android:id="@+id/new_hold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+
+        android:inputType="number" />
+    <!-- exhale -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exhale" />
+
+    <EditText
+        android:id="@+id/new_exhale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+
+        android:inputType="number" />
+
+    <!-- 分割线 -->
+    <View style="@style/Divider" android:layout_columnSpan="2"/>
+    <!-- expert -->
+    <!-- inhale-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:text="Expert" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inhale" />
+
+    <EditText
+        android:id="@+id/expert_inhale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+
+        android:inputType="number" />
+    <!-- hold -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hold" />
+
+    <EditText
+        android:id="@+id/expert_hold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+
+        android:inputType="number" />
+    <!-- exhale -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:text="Exhale" />
+
+    <EditText
+        android:id="@+id/expert_exhale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+
+        android:inputType="number" />
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/btnApply"
+        android:text="Apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnApplyClick"/>
+    <Button
+        android:id="@+id/btnCancel"
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnCancelClick"/>
+
+</GridLayout>

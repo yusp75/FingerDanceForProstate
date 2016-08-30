@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_about"
+        android:title="About"
+        app:showAsAction="collapseActionView" />
+    <!-- 练习 -->
+    <item
+        android:id="@+id/menu_exercise"
+        android:title="Exercise"
+        app:showAsAction="always" />
+    <!-- 训练 -->
+    <item
+        android:id="@+id/menu_train"
+        android:title="Train"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_train_body"
+                android:title="body" />
+            <item
+                android:id="@+id/menu_train_finger"
+                android:title="finger" />
+            <item
+                android:id="@+id/menu_train_breathe"
+                android:title="breathe" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_profile"
+        android:title="Profile"
+        app:showAsAction="always" />
+    <!-- 设置 -->
+    <item
+        android:id="@+id/menu_setting"
+        android:title="Setting"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_setting_clock"
+                android:title="Clock alarm" />
+            <item
+                android:id="@+id/menu_setting_music"
+                android:title="Music" />
+            <item
+                android:id="@+id/menu_setting_level"
+                android:title="Level" />
+        </menu>
+    </item>
+</menu>
